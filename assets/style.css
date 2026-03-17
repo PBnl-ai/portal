@@ -36,6 +36,14 @@ html {
   animation: arrow-nudge 1.5s ease-in-out infinite;
 }
 
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.animate-bounce-down {
+  animation: bounce-down 1.8s ease-in-out infinite;
+}
+
 /* Corner brackets (PB.NL style) */
 .corner-bracket {
   position: absolute;
