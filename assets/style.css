@@ -35,3 +35,24 @@ html {
 .animate-arrow-nudge {
   animation: arrow-nudge 1.5s ease-in-out infinite;
 }
+
+/* Corner brackets (PB.NL style) */
+.corner-bracket {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: #a8a29e; /* stone-400 */
+  border-style: solid;
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.group:hover .corner-bracket {
+  width: 12px;
+  height: 12px;
+  border-color: #57534e; /* stone-600 */
+}
+.cb-tl { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+.cb-tr { top: -1px; right: -1px; border-width: 1px 1px 0 0; }
+.cb-bl { bottom: -1px; left: -1px; border-width: 0 0 1px 1px; }
+.cb-br { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
