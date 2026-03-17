@@ -179,7 +179,7 @@
     </section>
 
     <!-- Horizontale categorie strip -->
-    <section class="pb-0">
+    <section class="pb-0 border-t border-stone-200 pt-4 lg:pt-6">
         <div class="overflow-x-auto scrollbar-hide select-none" id="topics-scroll">
             <div class="flex gap-4 lg:gap-6 pl-6 lg:pl-10" style="width: max-content;">
 
@@ -288,7 +288,7 @@
     </section>
 
     <!-- Nieuw Toegevoegd: 3 kolommen -->
-    <section class="bg-stone-900 text-stone-50 border-t border-stone-200">
+    <section class="bg-stone-900 text-stone-50">
         <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
 
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
@@ -895,6 +895,12 @@
             });
             topicsSlider.addEventListener('mouseleave', () => { tSpeed = 0; if (tAnimId) { cancelAnimationFrame(tAnimId); tAnimId = null; } });
             topicsSlider.style.webkitOverflowScrolling = 'touch';
+
+            // Start with first card half visible
+            const topicsFirstCard = topicsSlider.querySelector('a');
+            if (topicsFirstCard && window.innerWidth >= 768) {
+                topicsSlider.scrollLeft = topicsFirstCard.offsetWidth * 0.6;
+            }
         }
     </script>
 
