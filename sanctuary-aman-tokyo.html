@@ -101,96 +101,141 @@
         </div>
     </div>
 
-    <!-- Fullscreen Hero -->
-    <header class="relative min-h-screen flex flex-col justify-end">
-        <div class="absolute inset-0 z-0">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Aman Tokyo" class="object-cover w-full h-full">
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-900/70 via-stone-900/20 to-transparent"></div>
-        </div>
-        <div class="relative z-10 p-6 lg:p-10 pb-16 lg:pb-24 max-w-[1600px] mx-auto w-full">
-            <div class="text-xs font-semibold uppercase tracking-widest text-stone-300 mb-6">Sanctuary</div>
-            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium leading-[1.1] text-white">
-                Aman Tokyo
-            </h1>
-            <p class="mt-4 text-base md:text-lg text-stone-300 font-light">Tokyo, Japan</p>
-        </div>
-    </header>
+    <!-- Main Content: 2-Column Split -->
+    <main class="grid grid-cols-1 lg:grid-cols-2 min-h-screen border-b border-stone-200">
 
-    <!-- Breadcrumb -->
-    <div class="border-b border-stone-200">
-        <div class="max-w-[1600px] mx-auto px-6 lg:px-10 py-4">
-            <nav class="flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-stone-400">
+        <!-- Left Column: Content -->
+        <div class="relative flex flex-col pt-28 lg:pt-32 pb-16 lg:pb-24 px-6 lg:px-10 lg:border-r border-stone-200">
+
+            <!-- Breadcrumb -->
+            <nav class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-stone-400 mb-8">
                 <a href="index.html" class="hover:text-stone-900 transition-colors">Home</a>
                 <span>/</span>
                 <a href="ontdek.html" class="hover:text-stone-900 transition-colors">Ontdek</a>
                 <span>/</span>
                 <a href="sanctuary.html" class="hover:text-stone-900 transition-colors">Sanctuary</a>
-                <span>/</span>
-                <span class="text-stone-900">Aman Tokyo</span>
             </nav>
-        </div>
-    </div>
 
-    <!-- Content: 8+4 grid -->
-    <section class="border-b border-stone-200">
-        <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-                <div class="lg:col-span-8">
-                    <h2 class="font-serif text-3xl md:text-4xl tracking-tight font-medium mb-8">
-                        Waar traditionele Japanse <span class="text-stone-400 italic font-normal">wabi-sabi</span> esthetiek hedendaags luxe ontmoet
-                    </h2>
-                    <div class="flex flex-col gap-6 text-base md:text-lg text-stone-600 font-light leading-relaxed">
-                        <p>
-                            Hoog boven het financiële hart van Tokyo rijst Aman Tokyo op als een oase van stilte. Het hotel neemt de bovenste zes verdiepingen van het Otemachi Tower in beslag en biedt een zeldzame combinatie van panoramische uitzichten over de Imperial Palace Gardens en de skyline van Tokio, gecombineerd met interieurs die verwijzen naar de serene eenvoud van een traditionele Japanse ryokan.
-                        </p>
-                        <p>
-                            De 84 kamers en suites, ontworpen door Kerry Hill Architects, zijn studies in terughoudendheid: camphorwood, washi papier en natuursteen domineren het palet. Elke kamer heeft vloer-tot-plafond ramen en een Japans ofuro (diep bad) naast een westerse badkamer. De lobby, met dubbele hoogte en soji-schermen die het daglicht filteren, zet de toon: dit is luxe ontdaan van al het overbodige.
-                        </p>
-                        <p>
-                            Het 2.500 vierkante meter grote Aman Spa is het spirituele centrum van het hotel, met een 30 meter lang zwembad, traditionele Japanse onsen-faciliteiten en behandelingen die westerse en Aziatische tradities combineren. Het culinaire aanbod weerspiegelt dezelfde filosofie: van het verfijnde kaiseki in Musashi tot Italiaans-Japanse fusie in Arva.
-                        </p>
-                    </div>
+            <!-- Title -->
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-7xl xl:text-8xl tracking-tight font-medium leading-[0.95] text-stone-900 mb-8 lg:mb-12">
+                Aman<br>Tokyo
+            </h1>
+
+            <!-- Location Bar -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-y border-stone-200 py-3 mb-10 gap-4 sm:gap-0">
+                <div class="flex items-center gap-3">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-stone-400">Sanctuary</span>
+                    <span class="text-stone-300">&middot;</span>
+                    <span class="text-sm text-stone-600 font-light">Tokyo, Japan</span>
                 </div>
-                <div class="lg:col-span-4 flex flex-col gap-8 lg:sticky lg:top-32 h-fit">
-                    <div class="flex flex-col gap-4">
-                        <div class="text-xs font-semibold uppercase tracking-widest text-stone-400">Locatie</div>
-                        <p class="text-base text-stone-600 font-light">Otemachi Tower, 1-5-6 Otemachi, Chiyoda-ku, Tokyo 100-0004, Japan</p>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <div class="text-xs font-semibold uppercase tracking-widest text-stone-400">Highlights</div>
-                        <ul class="flex flex-col gap-2 text-sm text-stone-600 font-light">
-                            <li class="flex items-start gap-2">
-                                <span class="text-stone-400 mt-1">&mdash;</span>
-                                84 kamers &amp; suites door Kerry Hill
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-stone-400 mt-1">&mdash;</span>
-                                2.500m&sup2; Aman Spa met onsen
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-stone-400 mt-1">&mdash;</span>
-                                30m zwembad op hoogte
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-stone-400 mt-1">&mdash;</span>
-                                Uitzicht op Imperial Palace Gardens
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="https://www.aman.com/hotels/aman-tokyo" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-between border border-stone-200 hover:border-stone-400 transition-all w-full mt-4">
+                <a href="https://www.aman.com/hotels/aman-tokyo" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-between border border-stone-200 hover:border-stone-400 transition-all">
+                    <div class="corner-bracket cb-tl"></div>
+                    <div class="corner-bracket cb-tr"></div>
+                    <div class="corner-bracket cb-bl"></div>
+                    <div class="corner-bracket cb-br"></div>
+                    <span class="px-4 py-2 font-serif text-sm tracking-tight text-stone-500 group-hover:text-stone-900 transition-colors">Bezoek website</span>
+                    <span class="relative border-l border-stone-200 group-hover:border-stone-400 w-10 h-10 flex items-center justify-center text-stone-400 group-hover:text-stone-900 transition-all flex-shrink-0">
                         <div class="corner-bracket cb-tl"></div>
                         <div class="corner-bracket cb-tr"></div>
                         <div class="corner-bracket cb-bl"></div>
                         <div class="corner-bracket cb-br"></div>
-                        <span class="px-5 py-3 font-serif text-base md:text-lg tracking-tight text-stone-500 group-hover:text-stone-900 transition-colors">Bezoek website</span>
-                        <span class="relative border-l border-stone-200 group-hover:border-stone-400 w-12 h-12 flex items-center justify-center text-stone-400 group-hover:text-stone-900 transition-all flex-shrink-0">
-                            <div class="corner-bracket cb-tl"></div>
-                            <div class="corner-bracket cb-tr"></div>
-                            <div class="corner-bracket cb-bl"></div>
-                            <div class="corner-bracket cb-br"></div>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-base inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></iconify-icon>
-                        </span>
-                    </a>
+                        <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></iconify-icon>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Description -->
+            <div class="max-w-2xl">
+                <p class="font-serif text-xl lg:text-2xl leading-relaxed text-stone-600 font-normal">
+                    Hoog boven het financiële hart van Tokyo rijst Aman Tokyo op als een oase van stilte. Een zeldzame combinatie van panoramische uitzichten over de Imperial Palace Gardens, gecombineerd met interieurs die verwijzen naar de serene eenvoud van een traditionele Japanse ryokan.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Column: Image & Data -->
+        <div class="flex flex-col">
+
+            <!-- Hero Image -->
+            <div class="relative w-full h-[50vh] lg:h-[60vh] border-b border-stone-200">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Aman Tokyo" class="w-full h-full object-cover">
+                <div class="absolute bottom-4 right-4 bg-alabaster/90 backdrop-blur px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-stone-500">
+                    1/4 foto's
+                </div>
+            </div>
+
+            <!-- Details & Specs -->
+            <div class="flex flex-col p-6 lg:p-10">
+
+                <!-- Data Table -->
+                <div class="border-t border-stone-200 w-full text-xs font-semibold uppercase tracking-widest">
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Locatie</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm">Otemachi Tower, Chiyoda-ku, Tokyo</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Categorie</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm">Boutique Hotel</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Kamers</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm">84 kamers &amp; suites</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Architect</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm">Kerry Hill Architects</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Spa</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm">2.500m&sup2; met onsen &amp; 30m zwembad</div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Dining</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm flex flex-wrap gap-x-4 gap-y-1">
+                            <span>Musashi (kaiseki)</span>
+                            <span>Arva (Italiaans)</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Highlights</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm flex flex-wrap gap-x-4 gap-y-1">
+                            <span>Imperial Palace uitzicht</span>
+                            <span>Traditionele onsen</span>
+                            <span>Wabi-sabi interieurs</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-b border-stone-200 py-4">
+                        <div class="col-span-1 text-stone-400">Stijl</div>
+                        <div class="col-span-2 text-stone-900 font-medium normal-case tracking-normal text-sm flex flex-wrap gap-x-4 gap-y-1">
+                            <span>Minimalistisch</span>
+                            <span>Japans</span>
+                            <span>Stille luxe</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Extended Description -->
+    <section class="border-b border-stone-200">
+        <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
+            <div class="max-w-3xl">
+                <div class="flex flex-col gap-6 text-base md:text-lg text-stone-600 font-light leading-relaxed">
+                    <p>
+                        De 84 kamers en suites, ontworpen door Kerry Hill Architects, zijn studies in terughoudendheid: camphorwood, washi papier en natuursteen domineren het palet. Elke kamer heeft vloer-tot-plafond ramen en een Japans ofuro (diep bad) naast een westerse badkamer. De lobby, met dubbele hoogte en soji-schermen die het daglicht filteren, zet de toon: dit is luxe ontdaan van al het overbodige.
+                    </p>
+                    <p>
+                        Het 2.500 vierkante meter grote Aman Spa is het spirituele centrum van het hotel, met een 30 meter lang zwembad, traditionele Japanse onsen-faciliteiten en behandelingen die westerse en Aziatische tradities combineren. Het culinaire aanbod weerspiegelt dezelfde filosofie: van het verfijnde kaiseki in Musashi tot Italiaans-Japanse fusie in Arva.
+                    </p>
                 </div>
             </div>
         </div>
