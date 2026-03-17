@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanctuary | For Members.</title>
+    <title>Shop | For Members.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -39,7 +39,7 @@
     </nav>
 
     <!-- Fullscreen Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-stone-900 text-white opacity-0 pointer-events-none transition-opacity duration-700 ease-in-out flex flex-col">
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-stone-900 text-alabaster opacity-0 pointer-events-none transition-opacity duration-700 ease-in-out flex flex-col">
         <div class="p-6 lg:p-10 flex justify-between items-center relative">
             <button id="close-btn" class="flex items-center justify-center hover:opacity-50 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -86,155 +86,82 @@
     </div>
 
     <!-- Hero -->
-    <header class="min-h-[70vh] flex flex-col justify-end p-6 lg:p-10 pb-16 lg:pb-24 max-w-[1600px] mx-auto bg-alabaster">
+    <header class="min-h-[70vh] flex flex-col justify-end p-6 lg:p-10 pb-16 lg:pb-24 max-w-[1600px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-end">
             <div class="lg:col-span-8">
-                <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-6">Sanctuary</div>
+                <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-6">Shop</div>
                 <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium leading-[1.1] text-stone-900">
-                    Boutique Hotels<br>
-                    <span class="text-stone-400 italic font-normal">&amp; Retreats</span>
+                    Curated<br>
+                    <span class="text-stone-400 italic font-normal">pocket guides</span>
                 </h1>
             </div>
             <div class="lg:col-span-4 flex flex-col gap-8">
                 <p class="text-base md:text-lg text-stone-600 font-light leading-relaxed">
-                    Een gecureerde selectie van intieme verblijven waar minimalistisch design, uitzonderlijke persoonlijke service en ingetogen architectuur samenkomen.
+                    Wij reizen de wereld over op zoek naar de meest bijzondere bestemmingen en destilleren ze tot gidsen die even praktisch als mooi zijn.
                 </p>
-                <div class="flex items-center gap-4 text-xs font-medium uppercase tracking-widest text-stone-500">
-                    <span>8 adressen</span>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hotel Grid -->
+    <!-- Products -->
     <section class="border-t border-stone-200">
         <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
 
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Aman Tokyo" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <!-- Product 1 -->
+                <div class="group flex flex-col gap-6">
+                    <div class="relative w-full aspect-[3/4] overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800" alt="Gstaad Pocket Guide" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
+                    <div class="flex flex-col gap-4">
                         <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Aman Tokyo</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
+                            <h3 class="font-serif text-xl md:text-2xl tracking-tight font-medium">GSTAAD The Pocket Guide</h3>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-stone-400 mt-1.5">&euro; 20</span>
                         </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Tokyo, Japan</span>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Gecureerd door ons team, met insider tips over de mooiste plekken in het Zwitserse bergdorp. Van verborgen restaurants tot de beste wandelroutes en boutique winkels.
+                        </p>
+                        <a href="#" class="mt-2 flex items-center justify-between bg-stone-900 text-white hover:bg-stone-800 transition-colors">
+                            <span class="px-5 py-3.5 text-sm font-medium tracking-wide uppercase">Purchase</span>
+                            <span class="border-l border-stone-700 w-12 h-12 flex items-center justify-center">
+                                <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                            </span>
+                        </a>
                     </div>
-                </a>
+                </div>
 
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" alt="Ett Hem" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <!-- Product 2 -->
+                <div class="group flex flex-col gap-6">
+                    <div class="relative w-full aspect-[3/4] overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&q=80&w=800" alt="London Pocket Guide" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
+                    <div class="flex flex-col gap-4">
                         <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Ett Hem</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
+                            <h3 class="font-serif text-xl md:text-2xl tracking-tight font-medium">LONDON The Pocket Guide</h3>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-stone-400 mt-1.5">&euro; 50</span>
                         </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Stockholm, Zweden</span>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Een gids die de energie en dynamiek van een van 's werelds coolste steden vastlegt. Met cover art en bijdragen van lokale creatieven, kunstenaars en insiders.
+                        </p>
+                        <a href="#" class="mt-2 flex items-center justify-between bg-stone-900 text-white hover:bg-stone-800 transition-colors">
+                            <span class="px-5 py-3.5 text-sm font-medium tracking-wide uppercase">Purchase</span>
+                            <span class="border-l border-stone-700 w-12 h-12 flex items-center justify-center">
+                                <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                            </span>
+                        </a>
                     </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800" alt="The Jaffa" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">The Jaffa</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Tel Aviv, Isra&euml;l</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5bab247f-35d9-400d-a82b-fd87cfe913d2_1600w.webp" alt="La R&eacute;serve" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">La R&eacute;serve</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Parijs, Frankrijk</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" alt="Amangiri" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Amangiri</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Utah, USA</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" alt="The Siam" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">The Siam</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Bangkok, Thailand</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=800" alt="Fogo Island Inn" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Fogo Island Inn</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Newfoundland, Canada</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&q=80&w=800" alt="Soneva Jani" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Soneva Jani</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Noonu Atol, Malediven</span>
-                    </div>
-                </a>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Back to Ontdek -->
-    <section class="border-t border-stone-200">
-        <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40 text-center">
-            <a href="ontdek.html" class="group inline-flex items-center gap-4 font-serif text-3xl md:text-4xl tracking-tight font-medium text-stone-900 hover:text-stone-500 transition-colors">
-                <span>Terug naar alle categorieën</span>
-                <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-2xl md:text-3xl group-hover:translate-x-2 transition-transform"></iconify-icon>
-            </a>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-stone-100 border-t border-stone-200 pt-24 pb-12 px-6 lg:px-10">
+    <footer class="bg-stone-100 pt-24 pb-12 px-6 lg:px-10">
         <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 lg:gap-8 mb-24">
             <div class="md:col-span-5 flex flex-col items-start gap-8">
                 <div class="font-sans font-semibold tracking-tighter text-2xl uppercase">
-                    portal.
+                    For Members.
                 </div>
                 <p class="text-sm text-stone-500 font-light leading-relaxed max-w-sm">
                     Een doorlopende verzameling van uitmuntendheid in design, gastvrijheid en esthetiek. Curated by Peter &amp; Birgit.
