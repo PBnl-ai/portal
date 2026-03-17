@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanctuary | PORTAL.</title>
+    <title>Aman Tokyo — Sanctuary | PORTAL.</title>
+    <meta name="description" content="Aman Tokyo: minimalistisch Japans design op grote hoogte in het hart van Otemachi. Een ultiem toevluchtsoord waar traditionele ryokan-esthetiek en hedendaags luxe samenkomen.">
+    <meta property="og:title" content="Aman Tokyo — Sanctuary | PORTAL.">
+    <meta property="og:description" content="Minimalistisch Japans design op grote hoogte in het hart van Otemachi. Traditionele ryokan-esthetiek en hedendaags luxe.">
+    <meta property="og:image" content="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg">
+    <meta property="og:type" content="article">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Aman Tokyo",
+        "description": "Minimalistisch Japans design op grote hoogte in het hart van Otemachi. Traditionele ryokan-esthetiek en hedendaags luxe.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tokyo",
+            "addressCountry": "JP"
+        },
+        "image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg",
+        "url": "https://www.aman.com/hotels/aman-tokyo"
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -81,45 +101,130 @@
         </div>
     </div>
 
-    <!-- Hero -->
-    <header class="min-h-[70vh] flex flex-col justify-end p-6 lg:p-10 pb-16 lg:pb-24 max-w-[1600px] mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-end">
-            <div class="lg:col-span-8">
-                <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-6">Sanctuary</div>
-                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium leading-[1.1] text-stone-900">
-                    Boutique Hotels<br>
-                    <span class="text-stone-400 italic font-normal">&amp; Retreats</span>
-                </h1>
-            </div>
-            <div class="lg:col-span-4 flex flex-col gap-8">
-                <p class="text-base md:text-lg text-stone-600 font-light leading-relaxed">
-                    Een gecureerde selectie van intieme verblijven waar minimalistisch design, uitzonderlijke persoonlijke service en ingetogen architectuur samenkomen.
-                </p>
-                <div class="flex items-center gap-4 text-xs font-medium uppercase tracking-widest text-stone-500">
-                    <span>8 adressen</span>
-                </div>
-            </div>
+    <!-- Fullscreen Hero -->
+    <header class="relative min-h-screen flex flex-col justify-end">
+        <div class="absolute inset-0 z-0">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Aman Tokyo" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-900/70 via-stone-900/20 to-transparent"></div>
+        </div>
+        <div class="relative z-10 p-6 lg:p-10 pb-16 lg:pb-24 max-w-[1600px] mx-auto w-full">
+            <div class="text-xs font-semibold uppercase tracking-widest text-stone-300 mb-6">Sanctuary</div>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium leading-[1.1] text-white">
+                Aman Tokyo
+            </h1>
+            <p class="mt-4 text-base md:text-lg text-stone-300 font-light">Tokyo, Japan</p>
         </div>
     </header>
 
-    <!-- Hotel Grid -->
-    <section class="border-t border-stone-200">
+    <!-- Breadcrumb -->
+    <div class="border-b border-stone-200">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-10 py-4">
+            <nav class="flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-stone-400">
+                <a href="index.html" class="hover:text-stone-900 transition-colors">Home</a>
+                <span>/</span>
+                <a href="ontdek.html" class="hover:text-stone-900 transition-colors">Ontdek</a>
+                <span>/</span>
+                <a href="sanctuary.html" class="hover:text-stone-900 transition-colors">Sanctuary</a>
+                <span>/</span>
+                <span class="text-stone-900">Aman Tokyo</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Content: 8+4 grid -->
+    <section class="border-b border-stone-200">
         <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <div class="lg:col-span-8">
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-tight font-medium mb-8">
+                        Waar traditionele Japanse <span class="text-stone-400 italic font-normal">wabi-sabi</span> esthetiek hedendaags luxe ontmoet
+                    </h2>
+                    <div class="flex flex-col gap-6 text-base md:text-lg text-stone-600 font-light leading-relaxed">
+                        <p>
+                            Hoog boven het financiële hart van Tokyo rijst Aman Tokyo op als een oase van stilte. Het hotel neemt de bovenste zes verdiepingen van het Otemachi Tower in beslag en biedt een zeldzame combinatie van panoramische uitzichten over de Imperial Palace Gardens en de skyline van Tokio, gecombineerd met interieurs die verwijzen naar de serene eenvoud van een traditionele Japanse ryokan.
+                        </p>
+                        <p>
+                            De 84 kamers en suites, ontworpen door Kerry Hill Architects, zijn studies in terughoudendheid: camphorwood, washi papier en natuursteen domineren het palet. Elke kamer heeft vloer-tot-plafond ramen en een Japans ofuro (diep bad) naast een westerse badkamer. De lobby, met dubbele hoogte en soji-schermen die het daglicht filteren, zet de toon: dit is luxe ontdaan van al het overbodige.
+                        </p>
+                        <p>
+                            Het 2.500 vierkante meter grote Aman Spa is het spirituele centrum van het hotel, met een 30 meter lang zwembad, traditionele Japanse onsen-faciliteiten en behandelingen die westerse en Aziatische tradities combineren. Het culinaire aanbod weerspiegelt dezelfde filosofie: van het verfijnde kaiseki in Musashi tot Italiaans-Japanse fusie in Arva.
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 flex flex-col gap-8 lg:sticky lg:top-32 h-fit">
+                    <div class="flex flex-col gap-4">
+                        <div class="text-xs font-semibold uppercase tracking-widest text-stone-400">Locatie</div>
+                        <p class="text-base text-stone-600 font-light">Otemachi Tower, 1-5-6 Otemachi, Chiyoda-ku, Tokyo 100-0004, Japan</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="text-xs font-semibold uppercase tracking-widest text-stone-400">Highlights</div>
+                        <ul class="flex flex-col gap-2 text-sm text-stone-600 font-light">
+                            <li class="flex items-start gap-2">
+                                <span class="text-stone-400 mt-1">&mdash;</span>
+                                84 kamers &amp; suites door Kerry Hill
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-stone-400 mt-1">&mdash;</span>
+                                2.500m&sup2; Aman Spa met onsen
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-stone-400 mt-1">&mdash;</span>
+                                30m zwembad op hoogte
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-stone-400 mt-1">&mdash;</span>
+                                Uitzicht op Imperial Palace Gardens
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.aman.com/hotels/aman-tokyo" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-between border border-stone-200 hover:border-stone-400 transition-all w-full mt-4">
+                        <div class="corner-bracket cb-tl"></div>
+                        <div class="corner-bracket cb-tr"></div>
+                        <div class="corner-bracket cb-bl"></div>
+                        <div class="corner-bracket cb-br"></div>
+                        <span class="px-5 py-3 font-serif text-base md:text-lg tracking-tight text-stone-500 group-hover:text-stone-900 transition-colors">Bezoek website</span>
+                        <span class="relative border-l border-stone-200 group-hover:border-stone-400 w-12 h-12 flex items-center justify-center text-stone-400 group-hover:text-stone-900 transition-all flex-shrink-0">
+                            <div class="corner-bracket cb-tl"></div>
+                            <div class="corner-bracket cb-tr"></div>
+                            <div class="corner-bracket cb-bl"></div>
+                            <div class="corner-bracket cb-br"></div>
+                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-base inline-block group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery: 3 beelden -->
+    <section class="border-b border-stone-200">
+        <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
+            <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-12">Galerij</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                <div class="aspect-[4/5] overflow-hidden bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&q=80&w=800" alt="Tokyo skyline vanuit Aman Tokyo" class="object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-in-out">
+                </div>
+                <div class="aspect-[4/5] overflow-hidden bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&q=80&w=800" alt="Japanse tuin bij Imperial Palace" class="object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-in-out">
+                </div>
+                <div class="aspect-[4/5] overflow-hidden bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=800" alt="Minimalistische Japanse architectuur" class="object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-in-out">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verwante locaties: 4 kaarten -->
+    <section class="border-b border-stone-200">
+        <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 lg:mb-20 gap-8">
+                <div>
+                    <div class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Sanctuary</div>
+                    <h2 class="font-serif text-4xl md:text-5xl tracking-tight font-medium">Verwante verblijven</h2>
+                </div>
+                <a href="sanctuary.html" class="text-sm font-medium text-stone-400 hover:text-stone-900 transition-colors">Alles bekijken</a>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10">
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" alt="Aman Tokyo" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Aman Tokyo</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Tokyo, Japan</span>
-                    </div>
-                </a>
-
                 <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
                     <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
                         <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" alt="Ett Hem" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
@@ -132,20 +237,6 @@
                         <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Stockholm, Zweden</span>
                     </div>
                 </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800" alt="The Jaffa" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">The Jaffa</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Tel Aviv, Isra&euml;l</span>
-                    </div>
-                </a>
-
                 <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
                     <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
                         <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5bab247f-35d9-400d-a82b-fd87cfe913d2_1600w.webp" alt="La R&eacute;serve" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
@@ -158,7 +249,6 @@
                         <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Parijs, Frankrijk</span>
                     </div>
                 </a>
-
                 <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
                     <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
                         <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" alt="Amangiri" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
@@ -171,7 +261,6 @@
                         <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Utah, USA</span>
                     </div>
                 </a>
-
                 <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
                     <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
                         <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" alt="The Siam" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
@@ -184,42 +273,15 @@
                         <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Bangkok, Thailand</span>
                     </div>
                 </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=800" alt="Fogo Island Inn" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Fogo Island Inn</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Newfoundland, Canada</span>
-                    </div>
-                </a>
-
-                <a href="sanctuary-aman-tokyo.html" class="group flex flex-col gap-3 md:gap-5">
-                    <div class="relative w-full aspect-square overflow-hidden bg-stone-100">
-                        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&q=80&w=800" alt="Soneva Jani" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                    </div>
-                    <div class="flex flex-col gap-1 md:gap-1.5">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-serif text-sm sm:text-base md:text-2xl tracking-tight font-medium text-stone-900 pr-2">Soneva Jani</h3>
-                            <iconify-icon icon="solar:arrow-right-up-linear" stroke-width="1.5" class="text-sm md:text-xl text-stone-400 group-hover:text-stone-900 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all flex-shrink-0"></iconify-icon>
-                        </div>
-                        <span class="text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-widest text-stone-400 truncate">Noonu Atol, Malediven</span>
-                    </div>
-                </a>
-
             </div>
         </div>
     </section>
 
-    <!-- Back to Ontdek -->
-    <section class="border-t border-stone-200">
+    <!-- Back to Sanctuary -->
+    <section class="border-b border-stone-200">
         <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40 text-center">
-            <a href="ontdek.html" class="group inline-flex items-center gap-4 font-serif text-3xl md:text-4xl tracking-tight font-medium text-stone-900 hover:text-stone-500 transition-colors">
-                <span>Terug naar alle categorieën</span>
+            <a href="sanctuary.html" class="group inline-flex items-center gap-4 font-serif text-3xl md:text-4xl tracking-tight font-medium text-stone-900 hover:text-stone-500 transition-colors">
+                <span>Terug naar Sanctuary</span>
                 <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-2xl md:text-3xl group-hover:translate-x-2 transition-transform"></iconify-icon>
             </a>
         </div>
