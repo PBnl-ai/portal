@@ -760,6 +760,12 @@
             });
 
             slider.style.webkitOverflowScrolling = 'touch';
+
+            // Start with first card half visible (scroll to ~half card width)
+            const firstCard = slider.querySelector('a');
+            if (firstCard && window.innerWidth >= 768) {
+                slider.scrollLeft = firstCard.offsetWidth * 0.6;
+            }
         }
     </script>
 
