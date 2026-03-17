@@ -1,0 +1,20 @@
+/* PORTAL. — Custom CSS Variables & Overrides */
+
+:root {
+  --color-alabaster: #F8F8F7;
+}
+
+/* Serif font — using system Georgia as base, upgrade to custom font later */
+.font-serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: #d6d3d1; /* stone-300 */
+}
