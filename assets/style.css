@@ -44,6 +44,15 @@ html {
   animation: bounce-down 1.8s ease-in-out infinite;
 }
 
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Corner brackets (PB.NL style) */
 .corner-bracket {
   position: absolute;
