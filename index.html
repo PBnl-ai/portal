@@ -726,39 +726,39 @@
             menu.classList.add('opacity-0', 'pointer-events-none');
         });
 
-        // Drag-to-scroll with momentum for cities
+        // Hover-to-scroll for cities: mouse position controls scroll direction & speed
         const slider = document.getElementById('cities-scroll');
         if (slider) {
-            let isDown = false, startX, scrollLeft, velX = 0, lastX = 0, lastTime = 0, animId = null;
+            let animId = null, speed = 0;
 
-            function stopMomentum() { if (animId) { cancelAnimationFrame(animId); animId = null; } }
-
-            function momentum() {
-                if (Math.abs(velX) < 0.5) { animId = null; return; }
-                slider.scrollLeft += velX;
-                velX *= 0.92;
-                animId = requestAnimationFrame(momentum);
+            function autoScroll() {
+                if (Math.abs(speed) > 0.2) {
+                    slider.scrollLeft += speed;
+                    animId = requestAnimationFrame(autoScroll);
+                } else {
+                    animId = null;
+                }
             }
 
-            slider.addEventListener('mousedown', (e) => {
-                isDown = true; stopMomentum();
-                startX = e.pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;
-                lastX = e.pageX; lastTime = Date.now(); velX = 0;
-                slider.style.scrollBehavior = 'auto';
-            });
-            slider.addEventListener('mouseleave', () => { if (isDown) { isDown = false; animId = requestAnimationFrame(momentum); } });
-            slider.addEventListener('mouseup', () => { isDown = false; animId = requestAnimationFrame(momentum); });
             slider.addEventListener('mousemove', (e) => {
-                if (!isDown) return; e.preventDefault();
-                const x = e.pageX, now = Date.now(), dt = now - lastTime;
-                if (dt > 0) velX = (lastX - x) * 0.8;
-                lastX = x; lastTime = now;
-                slider.scrollLeft = scrollLeft - (x - slider.offsetLeft - startX);
+                const rect = slider.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width; // 0 = left edge, 1 = right edge
+                const deadZone = 0.15; // center 70% is slow/still
+                if (x < 0.5 - deadZone) {
+                    speed = -((0.5 - deadZone - x) / (0.5 - deadZone)) * 8;
+                } else if (x > 0.5 + deadZone) {
+                    speed = ((x - 0.5 - deadZone) / (0.5 - deadZone)) * 8;
+                } else {
+                    speed = 0;
+                }
+                if (!animId && Math.abs(speed) > 0.2) animId = requestAnimationFrame(autoScroll);
             });
 
-            // Smooth scroll-snap on touch devices
-            slider.style.scrollBehavior = 'smooth';
+            slider.addEventListener('mouseleave', () => {
+                speed = 0;
+                if (animId) { cancelAnimationFrame(animId); animId = null; }
+            });
+
             slider.style.webkitOverflowScrolling = 'touch';
         }
     </script>
