@@ -290,13 +290,13 @@
     </section>
 
     <!-- Nieuw Toegevoegd: 3 kolommen -->
-    <section class="bg-stone-900 text-stone-50">
+    <section id="nieuw-section" class="bg-stone-900 text-stone-50">
         <div class="max-w-[1600px] mx-auto p-6 lg:p-10 py-24 lg:py-40">
 
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
                 <div>
                     <div class="text-xs font-semibold uppercase tracking-widest text-stone-500 mb-4">Uitgelicht</div>
-                    <h2 class="font-serif text-4xl md:text-5xl tracking-tight font-medium">Nieuw op For Members.</h2>
+                    <h2 class="font-serif text-4xl md:text-5xl tracking-tight font-medium">Nieuw For Members.</h2>
                 </div>
                 <a href="ontdek.html" class="text-sm font-medium text-stone-400 hover:text-alabaster transition-colors">Alles bekijken</a>
             </div>
@@ -915,6 +915,33 @@
             if (slider) slider.scrollLeft += delta * 0.3;
             lastScroll = window.scrollY;
         }, { passive: true });
+
+        // Reveal animation for "Nieuw" section items
+        const nieuwSection = document.getElementById('nieuw-section');
+        if (nieuwSection) {
+            const columns = nieuwSection.querySelectorAll('.flex.flex-col.gap-5');
+            columns.forEach(col => {
+                const items = col.querySelectorAll(':scope > a');
+                items.forEach((item, i) => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    item.style.transition = `opacity 0.6s ease ${i * 100}ms, transform 0.6s ease ${i * 100}ms`;
+                });
+            });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const items = entry.target.querySelectorAll(':scope > a');
+                        items.forEach(item => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            columns.forEach(col => observer.observe(col));
+        }
     </script>
 
 </body>
