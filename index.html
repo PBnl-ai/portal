@@ -904,6 +904,17 @@
                 topicsSlider.scrollLeft = topicsFirstCard.offsetWidth * 0.6;
             }
         }
+
+        // Scroll-driven horizontal drift: strips move left as you scroll down
+        const topicsBase = topicsSlider ? topicsSlider.scrollLeft : 0;
+        const citiesBase = slider ? slider.scrollLeft : 0;
+        let lastScroll = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const delta = window.scrollY - lastScroll;
+            if (topicsSlider) topicsSlider.scrollLeft += delta * 0.3;
+            if (slider) slider.scrollLeft += delta * 0.3;
+            lastScroll = window.scrollY;
+        }, { passive: true });
     </script>
 
 </body>
